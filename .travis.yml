@@ -1,6 +1,9 @@
 before_install: cd pizza
 language: node_js
-node_js:
-  14
+node_js: 14
+sudo: required
+services:
+  - docker
 script:
-  - yarn build
+  - docker build -f Dockerfile.dev -t pizza-dev .
+  - docker build -f Dockerfile -t pizza .

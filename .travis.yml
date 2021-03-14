@@ -2,3 +2,5 @@ before_install: cd pizza
 language: node_js
 node_js:
   14
+script:
+  - yarn build

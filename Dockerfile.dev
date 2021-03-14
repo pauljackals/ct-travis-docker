@@ -1,0 +1,6 @@
+FROM node:alpine
+WORKDIR /opt/pizza
+COPY ./pizza/package.json ./
+RUN yarn
+COPY ./pizza/ ./
+CMD ["yarn", "start"]

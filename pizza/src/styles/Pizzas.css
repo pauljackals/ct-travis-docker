@@ -1,0 +1,6 @@
+.Pizzas > ul > li {
+    margin-bottom: 20px;
+}
+.Pizzas button, .Pizzas span{
+    display: block;
+}

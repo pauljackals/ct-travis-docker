@@ -1,0 +1,3 @@
+.CreatePizza select, .CreatePizza form > input {
+    display: block;
+}
